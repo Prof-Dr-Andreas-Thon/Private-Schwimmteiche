@@ -4,21 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>How to build a Natural Swimming Pool – Homepage</title>
-  <meta name="description" content="Buch-Homepage zu \"How to build a Natural Swimming Pool\" von Wolfram Kircher & Andreas Thon – Überblick, Kapitel, Case Studies." />
+  <meta name="description" content="Buch-Homepage zu 'How to build a Natural Swimming Pool' – Überblick, Kapitel, Case Studies." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{--brand:#0ea5e9;--ink:#0f172a}
-    html,body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}
-    .glass{backdrop-filter:saturate(180%) blur(10px); background:rgba(255,255,255,.6)}
+    html,body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans','Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'}
     .shimmer{background:linear-gradient(110deg,rgba(255,255,255,.0) 0%,rgba(255,255,255,.35) 40%,rgba(255,255,255,0) 60%);background-size:200% 100%;animation:shine 4s linear infinite}
     @keyframes shine{to{background-position-x:-200%}}
+    a.card:hover{transform:translateY(-2px);}
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
-  <!-- Header / Hero -->
   <header class="relative isolate overflow-hidden">
     <div class="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-200 via-sky-200 to-blue-200"></div>
     <div class="max-w-7xl mx-auto px-6 pt-16 pb-10 lg:pt-24">
@@ -28,18 +27,18 @@
             How to build a <span class="text-sky-600">Natural Swimming Pool</span>
           </h1>
           <p class="mt-6 text-lg leading-7 text-slate-700 max-w-2xl">
-            Die vollständige, praxisnahe Anleitung für Planung, Bau und Betrieb natürlicher Schwimmteiche und Naturpools.
+            Praxisnahe Anleitung für Planung, Bau und Betrieb natürlicher Schwimmteiche und Naturpools.
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a href="#kapitel" class="inline-flex items-center rounded-xl bg-sky-600 px-5 py-3 text-white font-semibold shadow hover:bg-sky-700 transition">Kapitelübersicht</a>
             <a href="#case" class="inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold shadow ring-1 ring-slate-200 hover:ring-slate-300 transition">Case Studies</a>
             <a href="#downloads" class="inline-flex items-center rounded-xl bg-white px-5 py-3 font-semibold shadow ring-1 ring-slate-200 hover:ring-slate-300 transition">Downloads</a>
           </div>
-          <div class="mt-6 text-sm text-slate-600">Von <strong>Wolfram Kircher</strong> & <strong>Andreas Thon</strong> · Illustrationen: Thomas Zlobinsky · Ausgabe 2025</div>
+          <div class="mt-6 text-sm text-slate-600">Von <strong>Wolfram Kircher</strong> & <strong>Andreas Thon</strong> · Hochschule Geisenheim · Ausgabe 2025</div>
         </div>
         <div class="lg:w-2/5">
           <div class="relative rounded-2xl shadow-2xl ring-1 ring-slate-900/10 overflow-hidden">
-            <img src="cover-placeholder.jpg" alt="Buchcover Natural Swimming Pool" class="w-full aspect-[4/3] object-cover">
+            <img src="assets/cover-placeholder.jpg" alt="Buchcover Natural Swimming Pool" class="w-full aspect-[4/3] object-cover">
             <div class="absolute inset-0 pointer-events-none shimmer opacity-40"></div>
           </div>
         </div>
@@ -47,7 +46,6 @@
     </div>
   </header>
 
-  <!-- Kapitel -->
   <section id="kapitel" class="py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-end justify-between gap-6 mb-8">
@@ -56,82 +54,80 @@
       </div>
 
       <ol class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Each chapter card uses consistent pattern and anchor targets for future pages -->
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/01-was-ist-ein-natuerlicher-pool.html" class="block">
+          <a href="chapters/01-was-ist-ein-natuerlicher-pool.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 1</p>
             <h3 class="mt-1 text-xl font-semibold">Was ist ein natürlicher Schwimmteich/Pool?</h3>
-            <p class="mt-2 text-slate-600">Definition, Abgrenzung zu konventionellen Pools, Vorteile, FLL-Bezug.</p>
+            <p class="mt-2 text-slate-600">Definition, Abgrenzung, Vorteile.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/02-entwicklung.html" class="block">
+          <a href="chapters/02-entwicklung.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 2</p>
             <h3 class="mt-1 text-xl font-semibold">Entwicklung der Naturpools</h3>
-            <p class="mt-2 text-slate-600">Historie, Verbände, Systemanbieter vs. Selbstbau.</p>
+            <p class="mt-2 text-slate-600">Historie, Verbände, Anbieter.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/03-grundlagen-wasser.html" class="block">
+          <a href="chapters/03-grundlagen-wasser.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 3</p>
             <h3 class="mt-1 text-xl font-semibold">Grundlagen Wasser</h3>
-            <p class="mt-2 text-slate-600">Biologie, Chemie, Hygiene – Algen, Biofilm, Nährstoffe.</p>
+            <p class="mt-2 text-slate-600">Biologie, Chemie, Hygiene.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/04-filtersysteme-bauarten.html" class="block">
+          <a href="chapters/04-filtersysteme-bauarten.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 4</p>
             <h3 class="mt-1 text-xl font-semibold">Filtersysteme & Bauarten</h3>
-            <p class="mt-2 text-slate-600">HBS, TWL, BSF, hydraulische Typen, Bauweisen.</p>
+            <p class="mt-2 text-slate-600">HBS, TWL, BSF, Hydraulik.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/05-grundmodelle.html" class="block">
+          <a href="chapters/05-grundmodelle.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 5</p>
             <h3 class="mt-1 text-xl font-semibold">Grundmodelle (1–4)</h3>
-            <p class="mt-2 text-slate-600">Vom Schwimmteich bis zum Laufgewässer mit BSF.</p>
+            <p class="mt-2 text-slate-600">Typenüberblick.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/06-bauanleitung.html" class="block">
+          <a href="chapters/06-bauanleitung.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 6</p>
             <h3 class="mt-1 text-xl font-semibold">Bauanleitung</h3>
-            <p class="mt-2 text-slate-600">Planung, Materialien, Bauablauf – Schritt für Schritt.</p>
+            <p class="mt-2 text-slate-600">Planung, Materialien, Bauablauf.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/07-bepflanzung.html" class="block">
+          <a href="chapters/07-bepflanzung.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 7</p>
             <h3 class="mt-1 text-xl font-semibold">Bepflanzung</h3>
-            <p class="mt-2 text-slate-600">Zonen, Artenwahl, Gestaltung & Pflanztechniken.</p>
+            <p class="mt-2 text-slate-600">Zonen, Artenwahl, Gestaltung.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/08-tiere-im-pool.html" class="block">
+          <a href="chapters/08-tiere-im-pool.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 8</p>
             <h3 class="mt-1 text-xl font-semibold">Tiere im Pool</h3>
-            <p class="mt-2 text-slate-600">Ungebetene vs. erwünschte Gäste, Management.</p>
-          </a>
-        </li>
-        <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
-          <a href="chapters/09-pflege-wartung.html" class="block">
-            <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 9</p>
-            <h3 class="mt-1 text-xl font-semibold">Pflege & Wartung</h3>
-            <p class="mt-2 text-slate-600">Reinigung, Wasserqualität, Algen- & Hygienekontrolle.</p>
+            <p class="mt-2 text-slate-600">Management, Schutz.</p>
           </a>
         </li>
         <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition sm:col-span-2 lg:col-span-1">
-          <a href="chapters/10-fallbeispiele.html" class="block">
+          <a href="chapters/09-pflege-wartung.html" class="block card">
+            <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 9</p>
+            <h3 class="mt-1 text-xl font-semibold">Pflege & Wartung</h3>
+            <p class="mt-2 text-slate-600">Regelbetrieb, Hygiene, Algenkontrolle.</p>
+          </a>
+        </li>
+        <li class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
+          <a href="chapters/10-fallbeispiele.html" class="block card">
             <p class="text-sm uppercase tracking-wider text-slate-500">Kapitel 10</p>
             <h3 class="mt-1 text-xl font-semibold">Fallbeispiele</h3>
-            <p class="mt-2 text-slate-600">Österreich, Deutschland, UK, USA – plus neue Cases.</p>
+            <p class="mt-2 text-slate-600">Österreich, Deutschland, UK, USA + Dixon.</p>
           </a>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- Case Studies -->
   <section id="case" class="py-16 lg:py-20 bg-slate-100 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-end justify-between gap-6 mb-8">
@@ -139,7 +135,6 @@
         <a href="case-studies/index.html" class="text-sky-700 font-semibold hover:underline">Alle Cases</a>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Example cards; link targets ready for repo pages -->
         <article class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
           <a href="case-studies/austria.html" class="block">
             <h3 class="text-xl font-semibold">Austria</h3>
@@ -155,51 +150,49 @@
         <article class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
           <a href="case-studies/united-kingdom.html" class="block">
             <h3 class="text-xl font-semibold">United Kingdom</h3>
-            <p class="mt-2 text-slate-600">u. a. Exeter – BSF/TWL-Kombination, Hochwasserschutz.</p>
+            <p class="mt-2 text-slate-600">z. B. Exeter – BSF/TWL-Kombination.</p>
           </a>
         </article>
         <article class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
           <a href="case-studies/united-states.html" class="block">
             <h3 class="text-xl font-semibold">United States</h3>
-            <p class="mt-2 text-slate-600">Technische Innovationen und Betreiberkonzepte.</p>
+            <p class="mt-2 text-slate-600">Technische Innovationen.</p>
           </a>
         </article>
         <article class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm hover:shadow transition">
           <a href="case-studies/dixon.html" class="block">
             <h3 class="text-xl font-semibold">NEU: Dixon</h3>
-            <p class="mt-2 text-slate-600">Zusätzliche Fallstudie auf Basis deiner Unterlagen.</p>
+            <p class="mt-2 text-slate-600">Zusätzliche Fallstudie.</p>
           </a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Downloads / Repo Links -->
   <section id="downloads" class="py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-3xl lg:text-4xl font-bold tracking-tight mb-6">Downloads & Ressourcen</h2>
+      <h2 class="text-3xl lg:4xl font-bold tracking-tight mb-6">Downloads & Ressourcen</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm">
           <h3 class="text-xl font-semibold">Repository</h3>
-          <p class="mt-2 text-slate-600">Quellcode, Kapitel-Seiten, Bilder und begleitende Materialien.</p>
+          <p class="mt-2 text-slate-600">Quellcode & Materialien.</p>
           <ul class="mt-3 list-disc list-inside text-slate-700 space-y-1">
-            <li><a class="text-sky-700 hover:underline" href="https://github.com/DEIN-GITHUB-NAME/nsp-homepage">github.com/DEIN-GITHUB-NAME/nsp-homepage</a></li>
+            <li><a class="text-sky-700 hover:underline" href="https://github.com/Prof-Dr-Andreas-Thon/Private-Schwimmteiche">github.com/Prof-Dr-Andreas-Thon/Private-Schwimmteiche</a></li>
             <li><code class="bg-slate-100 px-2 py-1 rounded">main</code> als Veröffentlichungs-Branch (GitHub Pages)</li>
           </ul>
         </div>
         <div class="rounded-2xl bg-white ring-1 ring-slate-200 p-6 shadow-sm">
           <h3 class="text-xl font-semibold">Dokumente</h3>
           <ul class="mt-3 list-disc list-inside text-slate-700 space-y-1">
-            <li><a class="text-sky-700 hover:underline" href="assets/How-to-build-a-NSP.pdf">Buch-PDF (Arbeitsversion)</a></li>
-            <li><a class="text-sky-700 hover:underline" href="assets/Case-Study-Dixon.pdf">Case Study: Dixon</a></li>
+            <li><a class="text-sky-700 hover:underline" href="assets/NSP_pages_23.7.19 MW_v.3.pdf">Buch-PDF (Arbeitsversion)</a></li>
+            <li><a class="text-sky-700 hover:underline" href="assets/Case study Dixon.docx">Case Study: Dixon (DOCX)</a></li>
           </ul>
         </div>
       </div>
-      <p class="mt-6 text-sm text-slate-500">Hinweis: Inhalte werden als Stichpunkte zusammengefasst und als Vortragsnotizen in die jeweiligen Kapitel-Seiten integriert.</p>
+      <p class="mt-6 text-sm text-slate-500">Hinweis: Die Kapitelseiten sind als Stichpunkte angelegt und können später mit Vortragsnotizen ergänzt werden.</p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="py-10 border-t border-slate-200 bg-white">
     <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p class="text-sm text-slate-600">© <span id="year"></span> Kircher & Thon · Hochschule Geisenheim University</p>
